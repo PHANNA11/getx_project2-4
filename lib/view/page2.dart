@@ -36,6 +36,7 @@ class Page2 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 FloatingActionButton(
+                  heroTag: 'v',
                   onPressed: () {
                     controller.decrement();
                   },
@@ -43,6 +44,7 @@ class Page2 extends StatelessWidget {
                   child: const Icon(Icons.add),
                 ),
                 FloatingActionButton(
+                  heroTag: 'rtyuio',
                   onPressed: () {
                     controller.increment();
                   },

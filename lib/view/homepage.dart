@@ -52,6 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 FloatingActionButton(
+                  heroTag: 'xcvbnm',
                   onPressed: () {
                     controller.decrement();
                   },
@@ -59,6 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: const Icon(Icons.add),
                 ),
                 FloatingActionButton(
+                  heroTag: 'vbnm,.',
                   onPressed: () {
                     controller.increment();
                   },
