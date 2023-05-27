@@ -1,6 +1,11 @@
 class ProductModel {
   late int code;
   late String name;
-  late String price;
+  late double price;
   late int qty;
+  ProductModel(
+      {required this.code,
+      required this.name,
+      required this.qty,
+      required this.price});
 }
