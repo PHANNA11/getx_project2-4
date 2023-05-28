@@ -8,4 +8,16 @@ class ProductController extends GetxController {
     products.add(pro);
     update();
   }
+
+  void deleteProduct(int code) async {
+    int index = products.indexWhere((element) => element.code == code);
+    products.removeAt(index);
+    update();
+  }
+
+  updateProduct(ProductModel pro) async {
+    int index = products.indexWhere((element) => element.code == pro.code);
+    products[index] = pro;
+    update();
+  }
 }
